@@ -100,16 +100,16 @@
   </div>
 </section>
 
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
      
-      <p><img class="img-fluid" alt="teaser" src="first_picture_path"></p>
-      <h2 class="subtitle has-text-centered">
+      <p><img class="img-fluid" alt="teaser" src="static/images/Banner.png"></p>
+      <h2 class="subtitle has-text-centered ">
       </h2>
     </div>
   </div>
-</section> -->
+</section>
 
 
 
@@ -123,7 +123,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Abstract
+            Human-robot interaction (HRI) plays a crucial role in enabling robots to support human production and daily life, yet it remains a formidable challenge. Significant advancements have been achieved through the design of cascaded finite-state machine systems composed of multiple modules, or by acquiring policies via reinforcement learning. However, the former approach becomes exponentially intractable when addressing complex, long-horizon tasks, while the latter suffers from the high cost of exploration involving human interaction or the need to construct intricate simulation environments---both of which risk the sim-to-real gap. This paper presents HRI-VLA, a framework that facilitates HRI through vision-language-action (VLA) models. We introduce the anchoring loop paradigm, a data collection strategy designed to enhance recording efficiency and streamline model training for HRI patterns. Experimental results show that HRI-VLA generalizes well across multiple VLA models and enables robots to engage in natural, seamless interactions with humans using only 20-shot finetuning.
           </p>
         </div>
       </div>
@@ -131,16 +131,16 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
         <h2 class="title is-3">Video</h2>
        
         <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-          <source src="your video repo"
+          <source src="./static/videos/main_video_compressed.mp4"
                   type="video/mp4">
         </video>
       </div>
-    </div> -->
+    </div>
 
     
     <!--/ Paper video. -->
@@ -150,18 +150,84 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Demonstration</h2>
-    <p class="content">Details</p>
+    <h2 class="title is-3">Data Collection</h2>
+    <h2 class="title is-4">System Setup</h2>
+    <div class="columns is-centered has-text-centered">
+
+      
+      <!-- <div class="column is-5">
+        <figure class="image">
+          <img src="static/images/setup.png" alt="teaser">
+        </figure>
+        <h2 class="subtitle has-text-centered is-size-6 has-text-weight-bold mt-2">
+          Dual-arm / Multi-camera Configuration  
+        </h2>
+      </div>
+      
+      <div class="column is-6">
+        <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;">
+          <source src="./static/videos/dual arm.mp4" type="video/mp4">
+        </video>
+      </div> -->
+
+      
+        <div class="column">
+          <h2 class="title is-3"></h2>
+         
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/setup.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+
+
+
     
+    </div>
+
+
+    <!-- <p class="content">Details</p> -->
     
-    <div class="carousel-container">
+
+    <h2 class="title is-4">Paradigm</h2>
+
+    
+    <!-- <div class="carousel-container">
       <div class="carousel">
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="your video path" type="video/mp4">
+              <source src="./static/videos/variance.mp4" type="video/mp4">
             </video>
-            <div class="card-content">video instruction</div>
+            <div class="card-content">Variance</div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/error recovery.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Error Recovery</div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/safety.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Safety</div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/anchoring loop.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Anchoring Loop</div>
           </div>
         </div>
         
@@ -170,11 +236,37 @@
 
       <script src="script.js"></script>
 
+    </div> -->
+
+    <div class="columns">
+    <div class="column is-half">
+      <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;">
+        <source src="./static/videos/variance.mp4" type="video/mp4">
+      </video>
+      <h2 class="title is-5 is-centered has-text-centered">variance</h2>
+    </div> 
+    <div class="column is-half">
+      <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;">
+        <source src="./static/videos/error recovery.mp4" type="video/mp4">
+      </video>
+      <h2 class="title is-5 is-centered has-text-centered">Error Recovery</h2>
+    </div> 
     </div>
 
-
-
-
+    <div class="columns">
+      <div class="column is-half">
+        <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;">
+          <source src="./static/videos/safety.mp4" type="video/mp4">
+        </video>
+        <h2 class="title is-5 is-centered has-text-centered">Safety</h2>
+      </div> 
+      <div class="column is-half light-background">
+        <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;">
+          <source src="./static/videos/anchoring loop.mp4" type="video/mp4">
+        </video>
+        <h2 class="title is-5 has-text-centered">Anchoring Loop</h2>
+      </div> 
+      </div>
 
 
 
@@ -184,9 +276,9 @@
 
 
 
-    <h3 class="title is-4">sub title</h3>
+    <!-- <h3 class="title is-4">sub title</h3>
 
-      Details
+      Details -->
     <div class="carousel-container">
       <div class="carousel">
       
@@ -210,8 +302,39 @@
     </div>
 
 
-
+    <h2 class="title is-3">Human-Robot Interaction</h2>
+    <h2 class="title is-4">Tasks</h2>
     
+        <div class="hero-body">
+         
+          <p><img style="width: 100%;" alt="teaser" src="static/images/tasks.png"></p>
+          <h2 class="subtitle has-text-centered ">
+          </h2>
+        </div>
+      
+    
+    <h2 class="title is-4">Demonstrations</h2>
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+          <source src="./static/videos/HRI_mask.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <h2 class="title is-4">User Study</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+       
+        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/user study 2.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+
   </div>
   
 </section>

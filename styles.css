@@ -69,3 +69,14 @@ body {
 .carousel-control.right {
     right: 10px;
 }
+.full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.light-background {
+background-color: #efd8d8; 
+padding: 1rem; 
+border-radius: 8px; 
+}  
